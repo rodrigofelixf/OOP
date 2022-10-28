@@ -6,4 +6,6 @@ Repositório criado para praticar e divulgar meus estudos em programação orien
 
 Curso que estou fazendo atualmente é do Gustavo Guanabara do Curso em Vídeo.
 
+* https://www.cursoemvideo.com/curso/java-poo
+
 -Fiquem a vontade para dar Issues; 
