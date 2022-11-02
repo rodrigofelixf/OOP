@@ -12,7 +12,7 @@ public class Fighter {
 
     // Methods
 
-    public void shows() {
+    public void show() {
 
     }
 
@@ -21,11 +21,11 @@ public class Fighter {
     }
 
     public void winFight() {
-
+        setWins(getWins() + 1);
     }
 
     public void loseFight() {
-
+        setDefeats(getDefeats() + 1);
     }
 
     public void drawFight() {
@@ -33,6 +33,21 @@ public class Fighter {
     }
 
     // Special Methods
+
+
+    public Fighter(String name, String nationality, int age, float height,
+                   float weight, int wins, int defeats, int draws) {
+        // constructor method
+        this.setName(name);
+        this.setNationality(nationality);
+        this.setAge(age);
+        this.setHeight(height);
+        this.setWeight(weight);
+        this.setWins(wins);
+        this.setDefeats(defeats);
+        this.setDraws(draws);
+    }
+
     public String getName() {
         return this.name;
     }
@@ -71,14 +86,25 @@ public class Fighter {
 
     public void setWeight(float weight) {
         this.weight = weight;
+        setCategory();
     }
 
     public String getCategory() {
         return this.category;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategory() {
+        if (this.getWeight() < 52.2) {
+            this.category = "Invalid";
+        } else if (this.getWeight() <= 40.3) {
+            this.category = "Lightweight";
+        } else if (this.weight <= 83.9) {
+            this.category = "Middleweight";
+        } else if (this.getWeight() <= 120.2) {
+            this.category = "Heavyweight";
+        } else {
+            this.category = "invalid";
+        }
     }
 
     public int getWins() {
