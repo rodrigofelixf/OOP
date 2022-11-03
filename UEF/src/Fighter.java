@@ -13,11 +13,22 @@ public class Fighter {
     // Methods
 
     public void show() {
-
+        System.out.println("Fighter: " + this.getName());
+        System.out.println("From: " + this.getNationality());
+        System.out.println(this.getAge() + " Age");
+        System.out.println(this.getHeight() + " Height");
+        System.out.println("Weight " + this.getWeight());
+        System.out.println("Wins " + this.getWins());
+        System.out.println("Defeats " + this.getDefeats());
+        System.out.println("Draws " + this.getDraws());
     }
 
     public void status() {
-
+        System.out.println(getName());
+        System.out.println("Weight " + this.getWeight());
+        System.out.println(this.getWins() + " Wins");
+        System.out.println(this.getDefeats() + " Defeats");
+        System.out.println(this.getDraws() + " Draws");
     }
 
     public void winFight() {
@@ -29,7 +40,7 @@ public class Fighter {
     }
 
     public void drawFight() {
-
+        setDraws(getDraws() + 1);
     }
 
     // Special Methods
