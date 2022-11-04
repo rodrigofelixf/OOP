@@ -7,14 +7,13 @@ public class UltimateEmojiFight {
         fighters[1] = new Fighter("Jessica", "USA", 29, 1.63f, 70,
                 12, 1, 1);
 
-
-        for (int i = 0; i < fighters.length; i++){
-             fighters[i].show();
-        }
+        Card UEC01 = new Card(); // Objeto da luta (Como se fosse um card do UFC)
 
 
-        }
-
-
-
+        // Marcação de luta e luta.
+        UEC01.scheduleFight(fighters[0], fighters[1]);
+        UEC01.fight();
+        fighters[0].status();
+        fighters[1].status();
+    }
 }

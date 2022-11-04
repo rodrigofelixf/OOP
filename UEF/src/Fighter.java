@@ -22,9 +22,11 @@ public class Fighter {
         System.out.println("Wins " + this.getWins());
         System.out.println("Defeats " + this.getDefeats());
         System.out.println("Draws " + this.getDraws());
+        System.out.println("************************");
     }
 
     public void status() {
+        System.out.println("### Status ###");
         System.out.println(getName());
         System.out.println("Weight " + this.getWeight());
         System.out.println(this.getWins() + " Wins");
@@ -36,7 +38,7 @@ public class Fighter {
         setWins(getWins() + 1);
     }
 
-    public void loseFight() {
+    public void loserFight() {
         setDefeats(getDefeats() + 1);
     }
 
