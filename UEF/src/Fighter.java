@@ -10,9 +10,10 @@ public class Fighter {
     private int defeats;
     private int draws;
 
-    // Methods
+    // Public Methods
 
     public void show() {
+        System.out.println("------------------------");
         System.out.println("Fighter: " + this.getName());
         System.out.println("From: " + this.getNationality());
         System.out.println(this.getAge() + " Age");
@@ -104,7 +105,7 @@ public class Fighter {
         return this.category;
     }
 
-    public void setCategory() {
+    private void setCategory() {
         if (this.getWeight() < 52.2) {
             this.category = "Invalid";
         } else if (this.getWeight() <= 40.3) {
