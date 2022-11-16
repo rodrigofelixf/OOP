@@ -9,7 +9,7 @@ public class Gafanhoto extends Person{
     }
 
     public void watchMore() {
-        
+
     }
 
     // special methods
